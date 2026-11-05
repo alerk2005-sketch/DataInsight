@@ -31,3 +31,11 @@ IntelliJ IDEA 中需让 `META-INF/services/Analyzer` 位于运行时 classpath �
 ## GitHub 仓库
 
 [DataInsight 仓库](https://github.com/alerk2005-sketch/DataInsight)；[实验四目录](https://github.com/alerk2005-sketch/DataInsight/tree/main/202411080117_%E5%8F%B6%E8%BF%85%E7%9A%93_%E7%AC%AC4%E6%AC%A1)。
+
+## LaTeX 报告工程
+
+`main.tex` 是主文件，使用课程原始模板 `ZAFUReport`。模板的 `ZAFUReport.cls`、`ZAFUReport.cfg`、`refs.bib`、`LICENSE` 和校徽与原始压缩包逐字节一致；`main.tex` 仅填写四个封面字段，其余命令（包括参考文献命令）保持原样。正文填写在 `chapter/content.tex`，完整源码通过 `\lstinputlisting` 引入。原模板 `refs.bib` 中的示例条目保留但本实验未引用。
+
+导入整个提交 ZIP，选择 `main.tex` 和 XeLaTeX；编译环境需要模板所用的 Times New Roman、中文字体和 LaTeX 宏包。源码与截图必须与主文件保持相对路径。原模板类文件引用 `ZAFUreport.cfg`，而压缩包提供 `ZAFUReport.cfg`；为兼容区分大小写的系统，提交 ZIP 额外放入同内容的 `ZAFUreport.cfg`，不修改原类文件或原配置。macOS 若将两文件视为同名，内容完全一致。
+
+本机未安装 XeLaTeX。内置编译检查若未返回成功结果，不能视为已完成 PDF 编译；报告以完整 LaTeX 工程交付。
