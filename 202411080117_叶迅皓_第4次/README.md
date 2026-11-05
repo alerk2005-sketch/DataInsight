@@ -38,4 +38,4 @@ IntelliJ IDEA 中需让 `META-INF/services/Analyzer` 位于运行时 classpath �
 
 导入整个提交 ZIP，选择 `main.tex` 和 XeLaTeX；编译环境需要模板所用的 Times New Roman、中文字体和 LaTeX 宏包。源码与截图必须与主文件保持相对路径。原模板类文件引用 `ZAFUreport.cfg`，而压缩包提供 `ZAFUReport.cfg`；为兼容区分大小写的系统，提交 ZIP 额外放入同内容的 `ZAFUreport.cfg`，不修改原类文件或原配置。macOS 若将两文件视为同名，内容完全一致。
 
-本机未安装 XeLaTeX。内置编译检查若未返回成功结果，不能视为已完成 PDF 编译；报告以完整 LaTeX 工程交付。
+本机未安装 XeLaTeX。内置编译器检查时无法读取系统的 Times New Roman 字体，报出字体找不到，未生成或验证 PDF；为保留模板原貌，未修改字体设置。报告以完整 LaTeX 工程交付。
